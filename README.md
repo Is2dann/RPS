@@ -62,6 +62,11 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
     - Because the name is a tad long, I changed it to it's abbreviation on smaller screens with media queries in css.
     - Also, on smaller screens the scoreboard is tilted and flows in to the header area.
 
+| Header |
+| Desktop | Tablet/Phone |
+| ------- | ------- |
+| ![header-desktop](assets/images/readme/header-desktop.png) | ![header-tablet](/assets/images/readme/header-scores-tablet.PNG) |
+
 -__Content__
 * Straight away after opening the page, the scoreboard is visible below the header with 2 nametags, one for the gamer (YOU) and one for the computer (NPC - as non-playable-character)
     - The scoreboard tilts and crawls up a little bit into the header area on smaller screens.
@@ -71,9 +76,20 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
         - Win: e.g: Rock tops scissors. You are a winner! and a bright green glow appears around the text.
         - Lose: e.g: Scissors loses to Rock. You are a loser! and a bright red glow appears around the text.
         - Draw: e.g: Paper equals to Paper. It's a draw! and a bright purple glow appears around the text.
+| Scoreboard & Message |
+| ------- |
+| ![score-message-desktop](/assets/images/readme/score-message-desktop.png) |
+
 * Below this text 3 items can be found. 3 image of hands doing gestures of fist(rock), open palm(paper), two straight finger(scissors).<br> These are our playing buttons.
-    - for interactivity style these buttons spin around and scale up when hover over with the cursor on a desktop or been tapped on a phone or tablet.
+    - For interactivity style these buttons spin around and scale up when hover over with the cursor on a desktop or been tapped on a phone or tablet.
+    - These icons are moving to 2 or 3 rows depends on the screen size.
+| Icons/Buttons |
+| Desktop | Tablet |
+| ------- | ------- |
+| ![icons-desktop](/assets/images/readme/icons-desktop.png) | ![icons-tablet](/assets/images/readme/icons-tablet.PNG) |
+
 * Small text below the buttons are encourage us to "Choose a gesture" to start the game.
+    - This text is not displaying on smaller screens.
 
 -__Footer__
 * There is no footer. A little section below the game on the left shows relevant data.
