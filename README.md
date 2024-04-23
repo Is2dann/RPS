@@ -127,7 +127,7 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
 
 ### Deployment
 
-The site is deployed using GitHub Pages - [Simple Unit Converter](link ...).
+The site is deployed using GitHub Pages - [Is2Dann-RPS](https://is2dann.github.io/RPS/).
 
 To Deploy the site using GitHub Pages:
 
