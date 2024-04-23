@@ -180,3 +180,16 @@ header {
             transform: rotate(350deg);
         }
     }
+
+#act {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #000;
+}
+    /* the take action text disabled on screens smaller than 768px */
+    @media screen and (max-width: 768px) {
+        #act {
+            display: none;
+        }
+    }
