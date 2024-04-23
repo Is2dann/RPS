@@ -72,32 +72,31 @@ function drawer(yourChoice, opponentChoice) {
   indicator.classList.add('draw');
   setTimeout(() => indicator.classList.remove('draw'), 800);
 }
-// switch statement here to make the if-else statement easier and shorter (switch statement idea found on mdn-webdocs, little help for tweaking it on stackoverflow)
 
-// lets make the game play
+  // lets make the game play
 function play(yourChoice) {
-    let opponentChoice = npcChoice();
-    // switch statement here to make the if-else statement easier and shorter (switch statement idea found on mdn-webdocs, little help for tweaking it on stackoverflow)
-    switch (yourChoice + opponentChoice) {
-        // winning scenario
-        case 'RockScissors':
-        case 'PaperRock':
-        case 'ScissorsPaper':
-            winner(yourChoice, opponentChoice);
-            break;
-        // losing scenario
-        case 'RockPaper':
-        case 'PaperScissors':
-        case 'ScissorsRock':
-            loser(yourChoice, opponentChoice);
-            break
-        // draw scenario
-        case 'RockRock':
-        case 'PaperPaper':
-        case 'ScissorsScissors':
-            drawer(yourChoice, opponentChoice);
-            break
-    }
+  let opponentChoice = npcChoice();
+  // switch statement here to make the if-else statement easier and shorter (switch statement idea found on mdn-webdocs, little help for tweaking it on stackoverflow)
+  switch (yourChoice + opponentChoice) {
+      // winning scenario
+      case 'RockScissors':
+      case 'PaperRock':
+      case 'ScissorsPaper':
+          winner(yourChoice, opponentChoice);
+          break;
+      // losing scenario
+      case 'RockPaper':
+      case 'PaperScissors':
+      case 'ScissorsRock':
+          loser(yourChoice, opponentChoice);
+          break
+      // draw scenario
+      case 'RockRock':
+      case 'PaperPaper':
+      case 'ScissorsScissors':
+          drawer(yourChoice, opponentChoice);
+          break
+  }
     
 }
 
