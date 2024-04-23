@@ -76,6 +76,7 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
         - Win: e.g: Rock tops scissors. You are a winner! and a bright green glow appears around the text.
         - Lose: e.g: Scissors loses to Rock. You are a loser! and a bright red glow appears around the text.
         - Draw: e.g: Paper equals to Paper. It's a draw! and a bright purple glow appears around the text.
+
 | Scoreboard & Message |
 | ------- |
 | ![score-message-desktop](/assets/images/readme/score-message-desktop.png) |
@@ -83,6 +84,7 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
 * Below this text 3 items can be found. 3 image of hands doing gestures of fist(rock), open palm(paper), two straight finger(scissors).<br> These are our playing buttons.
     - For interactivity style these buttons spin around and scale up when hover over with the cursor on a desktop or been tapped on a phone or tablet.
     - These icons are moving to 2 or 3 rows depends on the screen size.
+
 | Icons/Buttons |
 | Desktop | Tablet |
 | ------- | ------- |
