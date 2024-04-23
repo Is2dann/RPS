@@ -8,3 +8,44 @@
 body {
     background-image: radial-gradient(#143f80d4, #e4dcd1);
 }
+
+header {
+    background-image: radial-gradient(#000, #143f80d4);
+    color: #e4dcd1;
+    font-size: 50px;
+    font-weight: 1000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* abbreviation doesn't show as default */
+.abbr {
+    display: none;
+}
+    /* header goes smaller to leave more breathing space for the body on smaller screens */
+    @media screen and (max-width: 768px) {
+        header {
+            padding: 0;
+        }
+        /* the title turns into it's abbreviation */
+        .abbr {
+            display: inline-block;
+            font-size: 50%;
+            position: relative;
+            left: -110px;
+        }
+        /* the full text does not display */
+        .full {
+            display: none;
+        }
+        
+    }
+    /* goes back to normal, but the text is 80% only between 768px and 820px screens */
+    @media only screen and (max-width: 820px) and (min-width: 769px) {
+        .abbr {
+            display: none;
+        }    
+        .full {
+            font-size: 80%;
+        }
+    }
