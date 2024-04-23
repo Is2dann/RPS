@@ -72,3 +72,32 @@ header {
             transform: rotate(-15deg);
         }
     }
+
+.tag1 {
+    background-color: #143f80d4;
+    color: #e4dcd1;
+    padding: 4px 8px;
+    font-size: 20px;
+    border: 2px solid #e4dcd1;
+    border-radius: 8px 30px 8px 30px;
+    width: 150px;
+}
+
+.tag2 {
+    background-color: #143f80d4;
+    color: #e4dcd1;
+    padding: 4px 8px;
+    font-size: 20px;
+    border: 2px solid #e4dcd1;
+    border-radius: 30px 8px 30px 8px;
+    width: 150px;
+}
+    /* make the name tags smaller to fit better on smaller screens */
+    @media screen and (max-width: 768px) {
+        .tag1 {
+            width: 40%;        
+        }
+        .tag2 {
+            width: 40%;
+        }    
+    }
