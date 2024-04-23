@@ -30,3 +30,15 @@ function npcChoice() {
     return choices[randomize];
 }
 
+  // set the scenarios
+  // if Win
+function winner(yourChoice, opponentChoice) {
+    // increment the player's score by 1
+    yourScore++;
+    // and display it in the score board area
+    yourScoreTag.innerHTML = yourScore;
+    // opponent score does not change, but display it anyway
+    opponentScoreTag.innerHTML = opponentScore;
+    // change the message accordingly to the game result with template literals
+    resultMsg.innerHTML = `${yourChoice} tops ${opponentChoice}. You are a Winner!`;
+}
