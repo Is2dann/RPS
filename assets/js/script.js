@@ -49,14 +49,14 @@ function loser(yourChoice, opponentChoice) {
   opponentScore++;
   yourScoreTag.innerHTML = yourScore;
   opponentScoreTag.innerHTML = opponentScore;
-  resultMsg.innerHTML = `${yourChoice} loses ${opponentChoice}. You are a loser!`;
+  resultMsg.innerHTML = `${yourChoice} loses to ${opponentChoice}. You are a loser!`;
 }
 
   // if it's a draw
 function drawer(yourChoice, opponentChoice) {
   // no scores going up, so scoreboard does not need to update
   // message still need to be updated accordingly
-  resultMsg.innerHTML = `${yourChoice} equals ${opponentChoice}. It's a draw!`;
+  resultMsg.innerHTML = `${yourChoice} equals to ${opponentChoice}. It's a draw!`;
 }
 
   // let's make the game play
