@@ -45,3 +45,35 @@ Below are the design that were used to start building the site.
 | ![landing-tablet](assets/images/readme/landing-tablet.png) |
 
 ***
+
+## Features
+
+-__Typography and Colour scheme__
+
+As my main plan was to make this game stylish. <br>
+I used Papyrus font as that is one of my favourite, because stylish but still readable and works on every platform. <br>
+As the colours, my choice was blue as main colour and tan(#e4dcd1) and black added as a hue in the gradient background.
+Also green, red, and purple indicators on winning, losing or draw scenarios.
+
+### Existing features
+
+-__Header__
+* The game does have a header containing the name or title of the game.
+    - Because the name is a tad long, I changed it to it's abbreviation on smaller screens with media queries in css.
+    - Also, on smaller screens the scoreboard is tilted and flows in to the header area.
+
+-__Content__
+* Straight away after opening the page, the scoreboard is visible below the header with 2 nametags, one for the gamer (YOU) and one for the computer (NPC - as non-playable-character)
+    - The scoreboard tilts and crawls up a little bit into the header area on smaller screens.
+    - Javascript been used to update the scores on win.
+* Text below the scoreboard is initially set to the famous yell, when play this game in real life.
+    - Javascript been used to change this text later automatically when there is a result of a game.
+        - Win: e.g: Rock tops scissors. You are a winner! and a bright green glow appears around the text.
+        - Lose: e.g: Scissors loses to Rock. You are a loser! and a bright red glow appears around the text.
+        - Draw: e.g: Paper equals to Paper. It's a draw! and a bright purple glow appears around the text.
+* Below this text 3 items can be found. 3 image of hands doing gestures of fist(rock), open palm(paper), two straight finger(scissors).<br> These are our playing buttons.
+    - for interactivity style these buttons spin around and scale up when hover over with the cursor on a desktop or been tapped on a phone or tablet.
+* Small text below the buttons are encourage us to "Choose a gesture" to start the game.
+
+-__Footer__
+* There is no footer. A little section below the game on the left shows relevant data.
