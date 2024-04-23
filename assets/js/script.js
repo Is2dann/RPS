@@ -15,7 +15,7 @@ let opponentScoreTag = document.getElementById('score-op');
   // the score board itself
 let scores = document.getElementById('board');
   // the results message
-let resultMsg = document.querySelector('.res-msg');
+let resultMsg = document.querySelector('.res-msg > p');
   // and the rock, paper, scissor images(buttons)
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
