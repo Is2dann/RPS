@@ -130,3 +130,18 @@ header {
             transform: rotate(15deg);
         }      
     }
+
+.res.msg {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: #000;
+    padding-top: 8px;
+}
+    /* makes the result message a bit smaller to fit better on smaller screens */
+    @media screen and (max-width: 768px) {
+        .res-msg {
+            font-size: 20px;
+            padding: 0;
+        }    
+    }
