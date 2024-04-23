@@ -61,9 +61,10 @@ function drawer(yourChoice, opponentChoice) {
 
   // let's make the game play
 function play(yourChoice) {
+    // this brings the randomizer from above
     let opponentChoice = npcChoice();
     // switch statement here to make the if-else statement easier and shorter (switch statement idea found on mdn-webdocs, little help for tweaking it on stackoverflow)
-    switch (yourChoice, opponentChoice) {
+    switch (yourChoice + opponentChoice) {
         // winning scenario
         case 'RockScissors':
         case 'PaperRock':
