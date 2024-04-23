@@ -85,7 +85,7 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
     - For interactivity style these buttons spin around and scale up when hover over with the cursor on a desktop or been tapped on a phone or tablet.
     - These icons are moving to 2 or 3 rows depends on the screen size.
 
-| Icons/Buttons |
+| Icons or Buttons |
 | Desktop | Tablet |
 | ------- | ------- |
 | ![icons-desktop](/assets/images/readme/icons-desktop.png) | ![icons-tablet](/assets/images/readme/icons-tablet.PNG) |
@@ -95,3 +95,15 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
 
 -__Footer__
 * There is no footer. A little section below the game on the left shows relevant data.
+
+***
+
+## Features left to implement
+
+-__Future__
+* The results message could be improved and extended with more relevant messages 
+    - like: 
+        - Scissors cuts paper. You are a winner.
+        - Paper covers Rock.
+* The whole game could be expanded to Rock, Paper, Scissors, Lizard, Spock game from the series Big Bang Theory. Or even further...
+* Could make the game fully online so we could play with friends.
