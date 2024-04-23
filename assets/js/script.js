@@ -42,3 +42,17 @@ function winner(yourChoice, opponentChoice) {
     // change the message accordingly to the game result with template literals
     resultMsg.innerHTML = `${yourChoice} tops ${opponentChoice}. You are a Winner!`;
 }
+
+  // let's make the images(buttons work)
+  function rps() {
+    rock.addEventListener('click', function() {
+        play('rock');
+    })
+    paper.addEventListener('click', function() {
+        play('paper');
+    })
+    scissors.addEventListener('click', function() {
+        play('scissors')
+    })
+  }
+  rps();
