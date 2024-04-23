@@ -67,7 +67,7 @@ function drawer(yourChoice, opponentChoice) {
   // declare a variable for the effect happens when either win, lose or draw
   const indicator = document.getElementById('indicate');
   // message still need to be updated accordingly
-  resultMsg.innerHTML = `${yourChoice} equals ${opponentChoice}. It's a draw!`;
+  resultMsg.innerHTML = `${yourChoice} equals to ${opponentChoice}. It's a draw!`;
   // add a color indicator to the message according to the result
   indicator.classList.add('draw');
   setTimeout(() => indicator.classList.remove('draw'), 800);
@@ -101,16 +101,11 @@ function play(yourChoice) {
     
 }
 
-  // let's make the images(buttons work)
+// lets make those images(buttons) work
 function rps() {
-  rock.addEventListener('click', function() {
-      play('Rock');
-  })
-  paper.addEventListener('click', function() {
-      play('Paper');
-  })
-  scissors.addEventListener('click', function() {
-      play('Scissors')
-  })
+  rock.addEventListener('click', () => play('Rock'));
+  paper.addEventListener('click', () => play('Paper'));
+  scissors.addEventListener('click', () => play('Scissors'));
 }
+
 rps();
