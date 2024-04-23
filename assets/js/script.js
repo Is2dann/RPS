@@ -20,3 +20,13 @@ let resultMsg = document.querySelector('.res-msg');
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissors = document.getElementById('scissors');
+
+ // give the computer the opportunity to choose
+function npcChoice() {
+    let choices = ['rock','paper','scissor'];
+    // to choose between 0 and 3 randomly
+    let randomize = Math.floor(Math.random() * 3);
+    // but to choose only the options we gave (rock, paper, scissors)
+    return choices[randomize];
+}
+
