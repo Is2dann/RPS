@@ -13,7 +13,7 @@ let yourScoreTag = document.getElementById('score-you');
   // the opponent(computer) score
 let opponentScoreTag = document.getElementById('score-op');
   // the score board itself
-let scores = document.getElementById('board');
+let scores = document.getElementById('.board');
   // the results message
 let resultMsg = document.querySelector('.res-msg > p');
   // and the rock, paper, scissor images(buttons)
@@ -23,7 +23,7 @@ let scissors = document.getElementById('scissors');
 
   // give the computer the opportunity to choose
 function npcChoice() {
-  let choices = ['rock','paper','scissor'];
+  let choices = ['Rock','Paper','Scissors'];
   // to choose between 0 and 3 randomly
   let randomize = Math.floor(Math.random() * 3);
   // but to choose only the options we gave (rock, paper, scissors)
