@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log("now we have the DOM fully loaded and parsed");
   });
 
-  // setting base score to 0
+  // setting base scores to 0
 let yourScore = 0;
 let opponentScore = 0;
   // caching everything in we want to aim later
@@ -12,9 +12,9 @@ let opponentScore = 0;
 let yourScoreTag = document.getElementById('score-you');
   // the opponent(computer) score
 let opponentScoreTag = document.getElementById('score-op');
-  // the score board itself
-let scores = document.getElementById('.board');
-  // the results message
+  // the scoreboard itself
+let scores = document.querySelector('.board');
+  // the result message
 let resultMsg = document.querySelector('.res-msg > p');
   // and the rock, paper, scissor images(buttons)
 let rock = document.getElementById('rock');
@@ -31,37 +31,51 @@ function npcChoice() {
 }
 
   // set the scenarios
-  // if Win
+  //if win
 function winner(yourChoice, opponentChoice) {
+  // declare a variable for the effect indicates if its a win, lose or draw
+  const indicator = document.getElementById('indicator');
   // increment the player's score by 1
   yourScore++;
-  // and display it in the score board area
+  // and display on the screen in the scoreboard area
   yourScoreTag.innerHTML = yourScore;
-  // opponent score does not change, but display it anyway
   opponentScoreTag.innerHTML = opponentScore;
-  // change the message accordingly to the game result with template literals
-  resultMsg.innerHTML = `${yourChoice} tops ${opponentChoice}. You are a Winner!`;
+  // change the message accordingly to the game result
+  resultMsg.innerHTML = `${yourChoice} tops ${opponentChoice}. You are a winner!`;
+  // add a color indicator to the message according to the result
+  indicator.classList.add('win');
+  setTimeout(() => indicator.classList.remove('win'), 800);
 }
 
-  // if Lose
+  // if lose
 function loser(yourChoice, opponentChoice) {
+  // declare a variable for the effect happens when either win, lose or draw
+  const indicator = document.getElementById('indicator');
   // increment the opponent's score by 1
   opponentScore++;
   yourScoreTag.innerHTML = yourScore;
   opponentScoreTag.innerHTML = opponentScore;
   resultMsg.innerHTML = `${yourChoice} loses to ${opponentChoice}. You are a loser!`;
+  // add a color indicator to the message according to the result
+  indicator.classList.add('lose');
+  setTimeout(() => indicator.classList.remove('lose'), 800);
 }
 
   // if it's a draw
 function drawer(yourChoice, opponentChoice) {
   // no scores going up, so scoreboard does not need to update
+  // declare a variable for the effect happens when either win, lose or draw
+  const indicator = document.getElementById('indicate');
   // message still need to be updated accordingly
-  resultMsg.innerHTML = `${yourChoice} equals to ${opponentChoice}. It's a draw!`;
+  resultMsg.innerHTML = `${yourChoice} equals ${opponentChoice}. It's a draw!`;
+  // add a color indicator to the message according to the result
+  indicator.classList.add('draw');
+  setTimeout(() => indicator.classList.remove('draw'), 800);
 }
+// switch statement here to make the if-else statement easier and shorter (switch statement idea found on mdn-webdocs, little help for tweaking it on stackoverflow)
 
-  // let's make the game play
+// lets make the game play
 function play(yourChoice) {
-    // this brings the randomizer from above
     let opponentChoice = npcChoice();
     // switch statement here to make the if-else statement easier and shorter (switch statement idea found on mdn-webdocs, little help for tweaking it on stackoverflow)
     switch (yourChoice + opponentChoice) {
@@ -70,21 +84,21 @@ function play(yourChoice) {
         case 'PaperRock':
         case 'ScissorsPaper':
             winner(yourChoice, opponentChoice);
-            // break used to stop the argument
             break;
         // losing scenario
         case 'RockPaper':
         case 'PaperScissors':
         case 'ScissorsRock':
             loser(yourChoice, opponentChoice);
-            break;
+            break
         // draw scenario
         case 'RockRock':
         case 'PaperPaper':
         case 'ScissorsScissors':
             drawer(yourChoice, opponentChoice);
-            break;
+            break
     }
+    
 }
 
   // let's make the images(buttons work)

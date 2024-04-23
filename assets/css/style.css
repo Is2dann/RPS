@@ -193,3 +193,31 @@ header {
             display: none;
         }
     }
+
+/* these classes are add a glowing effect to the result message when the scenario happens via javascript */ 
+.win {
+    background-color: #31881f3c;
+    border: 10px double #2be606;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #21900bb2;
+}
+
+.lose {
+    background-color: #9e161648;
+    border: 10px double #f40606;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #a10f0fcf;
+}
+
+.draw {
+    background-color: #3c117542;
+    border: 10px double #6205f9;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #40126bc6;
+}
+    /* makes the indicator effect fit better on smaller screens by reducing the border size */
+    @media screen and (max-width: 820px) {
+        .win {border: 5px double #2be606;}
+        .lose {border: 5px double #f40606;}
+        .draw {border: 5px double #6205f9;}
+    }
