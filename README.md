@@ -62,8 +62,7 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
     - Because the name is a tad long, I changed it to it's abbreviation on smaller screens with media queries in css.
     - Also, on smaller screens the scoreboard is tilted and flows in to the header area.
 
-| Header |
-| Desktop | Tablet/Phone |
+| Header : Desktop | Header : Tablet/Phone |
 | ------- | ------- |
 | ![header-desktop](assets/images/readme/header-desktop.png) | ![header-tablet](/assets/images/readme/header-scores-tablet.PNG) |
 
@@ -85,8 +84,7 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
     - For interactivity style these buttons spin around and scale up when hover over with the cursor on a desktop or been tapped on a phone or tablet.
     - These icons are moving to 2 or 3 rows depends on the screen size.
 
-| Icons or Buttons |
-| Desktop | Tablet |
+| Icons : Desktop | Icons : Tablet |
 | ------- | ------- |
 | ![icons-desktop](/assets/images/readme/icons-desktop.png) | ![icons-tablet](/assets/images/readme/icons-tablet.PNG) |
 
@@ -107,3 +105,68 @@ Also green, red, and purple indicators on winning, losing or draw scenarios.
         - Paper covers Rock.
 * The whole game could be expanded to Rock, Paper, Scissors, Lizard, Spock game from the series Big Bang Theory. Or even further...
 * Could make the game fully online so we could play with friends.
+
+***
+
+## Technologies used
+
+### Languages used
+* HTML
+* CSS
+* JavaScript
+
+### Programs, Websites, Frameworks and Libraries used
+* Visual Studio Code - Used as a developer platform
+* [Github](www.github.com) - Used to save project
+* Balsamiq - Used for making wireframes designs
+* [Favicon.io](www.favicon.io/favicon-generator) - Used to create favicon
+
+***
+
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using GitHub Pages - [Simple Unit Converter](link ...).
+
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Open my repository.
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+
+## Testing
+
+-__Manual testing__
+* Can be found here: [TESTING.md](TESTING.md)
+
+### HTML Validator
+
+- Main page: [w3-report](https://validator.w3.org/nu/?doc=https%3A%2F%2Fis2dann.github.io%2FRPS%2F)
+
+### CSS Validator
+
+- [Jigsaw report](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fis2dann.github.io%2FRPS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+### Javascript
+* JSHint and Esprima were used to check Javascript issues
+
+| JSHint report | Esprima report |
+| ------- | ------- |
+| ![jshint](/assets/images/readme/jshint.png) | ![esprima](/assets/images/readme/esprima.png) |
+
+### Lighthouse
+
+| Main page |
+| ------- |
+| ![lighthouse](/assets/images/readme/lighthouse.png) |
+
+## Credits
+
+### Used code
+
+For the code writing I was following the learning material from CodeInstitute and tried to implement the Love Math walkthrough.
+When I needed help I was browsing [stackoverflow](www.stackoverflow.com), [w3schools](www.w3schools.com), the Percipio website I got from Learning People (helped a lot) [percipio](www.learningpeople.percipio.com), [MDN Web Docs](www.developer.mozilla.org/en-US/), [Shecodes](www.shecodes.io) and google searches.
