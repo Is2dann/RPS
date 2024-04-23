@@ -65,7 +65,7 @@ function loser(yourChoice, opponentChoice) {
 function drawer(yourChoice, opponentChoice) {
   // no scores going up, so scoreboard does not need to update
   // declare a variable for the effect happens when either win, lose or draw
-  const indicator = document.getElementById('indicate');
+  const indicator = document.getElementById('indicator');
   // message still need to be updated accordingly
   resultMsg.innerHTML = `${yourChoice} equals to ${opponentChoice}. It's a draw!`;
   // add a color indicator to the message according to the result
