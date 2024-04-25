@@ -11,7 +11,7 @@ Try it yourself here: [RPS game](https://is2dann.github.io/RPS/)
 |Story No.|Story|
 | ----------- | ----------- |
 |1.| As a user, <br> I want to do a quick competitive game when I have a couple of minutes. <br><br> I know I did a good job, when somebody with the same idea, look up the web and finds my stylish rock, paper, scissors game and have a go with it. |
-|2.| As a user, <br> Sometime I woul'd like to test my intuition. <br><br> I know I am done when I can test my intuition against a computer. |
+|2.| As a user, <br> Sometime I would like to test my intuition. <br><br> I know I am done when I can test my intuition against a computer. |
 |3.| As a user, <br> I would play with a game, that is colourful and stylish with interactive fun parts. <br><br> I know I did a good job, when my game has colours and style, with some moving parts and fun quotes or messages. |
 |4.| As a user, <br> I would like to play with my game on different platforms. <br><br> I know I did a good job, when my game is responsive and can be played on multiple devices.|
 
