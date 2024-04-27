@@ -169,4 +169,6 @@ To Deploy the site using GitHub Pages:
 ### Used code
 
 For the code writing I was following the learning material from CodeInstitute and tried to implement the Love Math walkthrough.
-When I needed help I was browsing [stackoverflow](www.stackoverflow.com), [w3schools](www.w3schools.com), the Percipio website I got from Learning People (helped a lot) [percipio](www.learningpeople.percipio.com), [MDN Web Docs](www.developer.mozilla.org/en-US/), [Shecodes](www.shecodes.io) and google searches.
+When I needed help I was browsing [stackoverflow](www.stackoverflow.com), [w3schools](www.w3schools.com), the [Percipio](www.learningpeople.percipio.com) website I got from Learning People (helped a lot), [MDN Web Docs](www.developer.mozilla.org/en-US/), [Shecodes](www.shecodes.io) and google searches.
+
+For de design I took ideas from [this similar game](https://rockspapersscissors.vercel.app/) I found via google search.
