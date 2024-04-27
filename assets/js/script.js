@@ -76,7 +76,7 @@ function drawer(yourChoice, opponentChoice) {
   // lets make the game play
 function play(yourChoice) {
   let opponentChoice = npcChoice();
-  // switch statement here to make the if-else statement easier and shorter (switch statement idea found on mdn-webdocs, little help for tweaking it on stackoverflow)
+  // switch statement here to make the if-else statement easier and shorter (switch statement idea found on mdn-webdocs, to making it simpler via google searches, little help for tweaking it on stackoverflow)
   switch (yourChoice + opponentChoice) {
       // winning scenario
       case 'RockScissors':
